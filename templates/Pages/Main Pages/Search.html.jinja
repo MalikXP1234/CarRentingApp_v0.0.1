@@ -1,0 +1,42 @@
+{% extends "partials/base.jinja" %}
+{% block title %} Search {% endblock %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Rentals.html" class="btn btn-primary">Back</a>
+
+<!-- Creates a search bar -->
+<form class="mx-auto d-flex col-6 mb-3 me-lg-3">
+    <input type="search" class="form-control form-control-dark" placeholder="Search Locations" aria-label="Search">
+</form>
+
+<!-- This creates a whole table by using the JSON file and outputs the data -->
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for data in SEARCH %}
+
+    <tr>
+        <td colspan="2">{{data.Country}}</td>
+        <td colspan="2">{{data.City}}</td>
+        <td colspan="2">{{data.Postcode}}</td>
+        <td>
+            <a href="../Vehicle%20Pages/Timezone.html" class="btn btn-dark">Select</a>
+        </td>
+        {% endfor %}
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}

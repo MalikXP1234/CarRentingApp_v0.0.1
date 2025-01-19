@@ -1,0 +1,42 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="../Vehicle%20Pages/SelectVehicle.html" class="btn btn-primary">Back</a>
+
+<!-- This gives the user to choose how many miles they will need for the range -->
+<div class="position-absolute top-50 start-50 translate-middle">
+    <div class="card">
+        <div class="card-body">
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+
+            </div>
+            <p class="h3">Choose Milage</p>
+
+            <p class="h6">Select how much you need</p>
+
+            <label for="customRange1" class="form-label">100 miles -> 1000 miles </label>
+            <input type="range" class="form-range" id="customRange1">
+
+             <div class="d-flex justify-content-between"><a href="Calculator.html" class="btn btn-primary">Milage Calculator</a>
+        </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-2">
+                <div style="text-align: center"><h5> 15$ per day </h5></div>
+                <a href="../Checkout%20Pages/Checkout.html" class="btn btn-primary">Select</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

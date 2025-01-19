@@ -1,0 +1,62 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="../Main%20Pages/Home.html" class="btn btn-primary">Back</a>
+
+
+<!-- Creates a card that contains various items for the user to choose from -->
+<div class="card">
+    <div class="card-body">
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-secondary">Filter</button>
+        </div>
+        <p class="h3">transmission type</p>
+
+        <!-- These are switches -->
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Automatic</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Manual</label>
+        </div>
+
+        <p class="h3">Prices</p>
+
+        <!-- this allows you to choose the range -->
+        <label for="customRange1" class="form-label">Low -> High </label>
+        <input type="range" class="form-range" id="customRange1">
+
+        <!-- Creates various dropbox for the user to use -->
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Brand</option>
+            <option value="">Audi</option>
+            <option value="">Nissan</option>
+            <option value="">Toyota</option>
+            <option value="">Mclarent</option>
+        </select>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Countries</option>
+            <option value="">America</option>
+            <option value="">Japan</option>
+            <option value="">United Kingdom</option>
+        </select>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Rating</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">four</option>
+            <option value="5">five</option>
+        </select>
+
+    </div>
+</div>
+
+{% include 'partials/card2.jinja' %}
+
+{% endblock %}

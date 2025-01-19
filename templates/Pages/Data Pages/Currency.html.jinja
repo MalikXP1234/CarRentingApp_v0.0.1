@@ -1,0 +1,38 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="../Main%20Pages/Profile.html" class="btn btn-primary">Back</a>
+
+<h1 class="text-center mb-8">Currency</h1>
+
+<form class="mx-auto d-flex col-6 mb-3 me-lg-3">
+    <input type="search" class="form-control form-control-dark" placeholder="Find your currency?" aria-label="Search">
+</form>
+
+<!-- Gets the data from JSON and outputs the currency type -->
+<div style="text-align: center">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for data in CURRENCY %}
+        <tr>
+            <td colspan="3">{{data.Currency}}</td>
+            <td>
+                <a href="" class="btn btn-dark">Select Currency</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="../Main%20Pages/Search.html" class="btn btn-primary">Back</a>
+
+
+<div class="position-absolute top-50 start-50 translate-middle">
+
+    <form class="mx-auto d-flex col-6 mb-3 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="address" aria-label="Search">
+    </form>
+
+    <div class="card">
+        <div class="card-body">
+
+            <h1 class="text-center mb-8">Data and time</h1>
+
+            <div class="form-floating">
+                <input type="date" class="form-control" id="floatingDOB" >
+                <label for="floatingDOB">Date</label>
+            </div>
+
+            <h1 class="text-center mb-8">How long?</h1>
+
+            <div class="form-floating">
+                <input type="time" class="form-control" >
+                <label for="floatingDOB">Start</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="time" class="form-control" >
+                <label for="floatingDOB">End</label>
+            </div>
+
+        </div>
+
+        <a href="PickUpZone.html" class="btn btn-dark">Continue</a>
+    </div>
+</div>
+
+
+{% endblock %}

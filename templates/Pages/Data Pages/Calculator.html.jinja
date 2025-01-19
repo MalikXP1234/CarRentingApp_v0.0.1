@@ -1,0 +1,39 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="MilesCalculator.html" class="btn btn-primary">Back</a>
+
+<div style="text-align: center"><h1> CALCULATOR </h1></div>
+
+<div style="text-align: center"><h6> Input your stop with the button </h6></div>
+
+<!-- This is for the user who want to input the more stops -->
+ <div class="d-grid gap-2 col-6 mx-auto">
+   <a href="" class="btn btn-warning">Add Stop sections to your Journey</a>
+   <input type="number" class="form-control" id="email" placeholder="Enter your miles"  required>
+</div>
+
+<!-- This diplays a column of buttons which acts as a way for the user to see the stops -->
+<div class="border border-black container mt-5">
+    <div class="d-grid gap-5 col-12 mx-auto">
+        <a href="" class="btn btn-dark">Start Location</a>
+        <a href="" class="btn btn-warning">Stop</a>
+        <a href="" class="btn btn-warning">Stop</a>
+        <a href="" class="btn btn-warning">Stop</a>
+        <a href="" class="btn btn-dark">End Location</a>
+    </div>
+</div>
+<!-- Outputs the data that has been added overall-->
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body">
+             <div style="text-align: center"><h5> Total miles</h5></div>
+             <div style="text-align: center"><h2> 150</h2></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

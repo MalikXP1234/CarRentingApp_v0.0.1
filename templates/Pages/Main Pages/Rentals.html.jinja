@@ -1,0 +1,43 @@
+{% extends "partials/base.jinja" %}
+{% from "partials/card.jinja" import mycard %}
+{% block title %} Rentals {% endblock %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Profile.html" class="btn btn-primary">Back</a>
+
+<!-- Displays three buttons at the top middle -->
+<div style="text-align: center">
+    <a href="" class="btn btn-primary">Previous</a>
+    <a href="" class="btn btn-primary">Current </a>
+    <a href="" class="btn btn-primary">Scheduled</a>
+</div>
+
+
+<!-- This creates a card that has data to display -->
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "" , "") }}
+        <img src="../../img/400z.jpg" class="card-img-top" alt="...">
+        <div class="card-body">Nissan 400z</div>
+    </div>
+    <p class="fs-3">---------</p>
+    <p class="fs-3">Rental Data: 23/1/2025</p>
+
+    <p class="fs-3">STATE OF RENT: Work in progress</p>
+</div>
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "" , "") }}
+        <img src="../../img/chaser.jpg" class="card-img-top" alt="...">
+        <div class="card-body">Toyota chaser</div>
+    </div>
+    <p class="fs-3">---------</p>
+    <p class="fs-3">Rental Data: 15/5/2025</p>
+
+    <p class="fs-3">STATE OF RENT: Unknown</p>
+</div>
+
+{% endblock %}

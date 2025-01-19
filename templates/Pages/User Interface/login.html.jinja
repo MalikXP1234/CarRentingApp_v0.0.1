@@ -1,0 +1,34 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<div class="position-absolute top-50 start-50 translate-middle">
+    <div class="border border-black container mt-5">
+
+        <h1 class="text-center mb-8">Welcome back!</h1>
+
+
+        <!-- This will ask you to input the data to login -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <form>
+                <div class="mb-3"><label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="" required>
+                </div>
+            </form>
+            <!-- These are small links that are used to send the user to the other pages -->
+            <div class="d-grid gap-4 col-12 mx-auto">
+                <a href="../Main%20Pages/home.html" class="btn btn-primary">Login</a>
+                <a href="ResetPassword.html" class=" text-center link-danger">Forgotten Password?</a>
+                <a href="SignUp.html" class="btn btn-dark">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

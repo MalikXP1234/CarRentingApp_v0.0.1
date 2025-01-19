@@ -1,0 +1,46 @@
+{% from "partials/card.jinja" import mycard %}
+
+{% for brand in BRANDS %}
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Nissan Skyline GT-R" , "") }}
+        <img src="../../img/SkylineGT.jpg" class="card-img-top" alt="...">
+        <div class="card-body">$55,000</div>
+        <a href="../Data%20pages/MilesCalculator.html" class="btn btn-primary">Select</a>
+         <a href="" class="btn btn-dark">favorite</a>
+    </div>
+</div>
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "mclaren p1" , "") }}
+        <img src="../../img/p1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">$250,000</div>
+        <a href="../Data%20pages/MilesCalculator.html" class="btn btn-primary">Select</a>
+        <a href="" class="btn btn-dark">favorite</a>
+    </div>
+</div>
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Toyota Altezza" , "") }}
+        <img src="../../img/altezza.jpg" class="card-img-top" alt="...">
+        <div class="card-body">$25,000</div>
+        <a href="../Data%20pages/MilesCalculator.html" class="btn btn-primary">Select</a>
+        <a href="" class="btn btn-dark">favorite</a>
+    </div>
+</div>
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Audi RS6" , "") }}
+        <img src="../../img/rs6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">$80,000</div>
+        <a href="../Data%20pages/MilesCalculator.html" class="btn btn-primary">Select</a>
+        <a href="" class="btn btn-dark">favorite</a>
+    </div>
+</div>
+
+
+{% endfor %}

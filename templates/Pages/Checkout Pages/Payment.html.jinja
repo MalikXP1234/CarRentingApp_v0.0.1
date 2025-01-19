@@ -1,0 +1,60 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Checkout.html" class="btn btn-primary">Back</a>
+
+<div style="text-align: center"><h1> PAYMENT METHOD </h1></div>
+
+<!-- A big input box that contains lots of areas for the user to input -->
+<div class="card">
+    <div class="card-body">
+        <p class="h3">Credit Card info</p>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Name on card</label>
+                <input type="email" class="form-control" id="email" placeholder="Please enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Data" class="form-label">Expiry Data</label>
+                <input type="date" class="form-control" id="Data" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card" class="form-label">Card number</label>
+                <input type="number" class="form-control" id="card" placeholder="Please enter your exact digits "
+                       required>
+            </div>
+
+            <div class="mb-3">
+                <label for="code" class="form-label">Security code</label>
+                <input type="number" class="form-control" id="code" placeholder="Please enter your code" required>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- Two buttons side by side for the user to choose -->
+<div class="card">
+    <div class="card-body">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-secondary">option 1</button>
+            <button type="button" class="btn btn-secondary">option 2</button>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-2">
+                <a href="ThankYou.html" class="btn btn-primary">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

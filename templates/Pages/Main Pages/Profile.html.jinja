@@ -1,0 +1,59 @@
+{% extends "partials/base.jinja" %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Home.html" class="btn btn-primary">Back</a>
+
+<div style="text-align: center"><h1> Edit Profile </h1></div>
+
+<div style="text-align: center"><h3> Personal infomation </h3></div>
+
+
+<!-- This allows the user to input the data that is needed -->
+<div class="container mt-5">
+
+    <div class="form-floating">
+
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+               value="Even Micheal Jr">
+        <label for="floatingInput">Name</label>
+    </div>
+    <!-- this input is invalid -->
+    <div class="form-floating">
+        <input type="date" class="form-control is-invalid" id="floatingDOB" >
+        <label for="floatingDOB">Data of birth</label>
+    </div>
+    <div class="form-floating">
+        <input type="text" class="form-control" id="floatingAddress" placeholder="Password" value="NE4TQE">
+        <label for="floatingAddress">Address</label>
+    </div>
+    <div class="form-floating">
+        <input type="Text" class="form-control is-invalid" id="floatingStreet" placeholder="Password" value="">
+        <label for="floatingStreet">Street</label>
+    </div>
+    <div class="form-floating">
+        <input type="text" class="form-control" id="floatingCountry" placeholder="Password" value="United Kingdom">
+        <label for="floatingCountry">Country</label>
+    </div>
+    <div class="form-floating">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="Password" value="Evens12@gmail.com">
+        <label for="floatingEmail">Email Address</label>
+    </div>
+    <div class="form-floating">
+        <input type="number" class="form-control" id="floatingNumber" placeholder="Password" value="07973433245">
+        <label for="floatingNumber">Mobile Number</label>
+    </div>
+
+</div>
+
+<!-- This is for the button that takes the player to the currency page -->
+<div class="mx-auto p-5" style="width: 200px;"></div>
+
+<div class="d-grid gap-2">
+    <a href="../Data%20Pages/Currency.html" class="btn btn-primary">Currency</a>
+</div>
+
+
+{% endblock %}

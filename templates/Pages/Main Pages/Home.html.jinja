@@ -1,0 +1,58 @@
+{% extends "partials/base.jinja" %}
+{% from "partials/card.jinja" import mycard %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<!-- This is a button that takes you back -->
+<a href="Support.html" class="btn btn-primary">Back</a>
+
+<div style="text-align: center"><h1> Available vehicles globaly</h1></div>
+
+<!-- This will give you cards of vehicles which uses mycard input   -->
+{% for brand in BRANDS %}
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Nissan" , "") }}
+        <img src="../../img/Nissan.jpg" class="card-img-top" alt="...">
+        <div class="card-body"></div>
+        <a href="../Vehicle%20Pages/SearchBrand.html" class="btn btn-primary">Select</a>
+    </div>
+</div>
+
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Mclaren" , "") }}
+        <img src="../../img/Mclaren.jpg" class="card-img-top" alt="...">
+        <div class="card-body"></div>
+        <a href="../Vehicle%20Pages/SearchBrand.html" class="btn btn-primary">Select</a>
+    </div>
+</div>
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Toyota" , "") }}
+        <img src="../../img/toyota.jpg" class="card-img-top" alt="...">
+        <div class="card-body"></div>
+        <a href="../Vehicle%20Pages/SearchBrand.html" class="btn btn-primary">Select</a>
+    </div>
+</div>
+
+<div class="py-5 text-center container">
+    <div class="card mx-auto" style="width: 18rem;">
+        {{ mycard( "Audi" , "") }}
+        <img src="../../img/audi.jpg" class="card-img-top" alt="...">
+        <div class="card-body"></div>
+        <a href="../Vehicle%20Pages/SearchBrand.html" class="btn btn-primary">Select</a>
+    </div>
+</div>
+
+
+{% endfor %}
+
+
+{% endblock %}
+

@@ -1,0 +1,48 @@
+{% extends "partials/base2.jinja" %}
+
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="../Data%20Pages/MilesCalculator.html" class="btn btn-primary">Back</a>
+
+<div style="text-align: center"><h1> CHECKOUT </h1></div>
+
+<!-- Creates a card that will show the vehicle you want to buy -->
+<div class="card-body">
+    <div class="py-5 text-center container">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src="../../img/SkylineGT.jpg" class="card-img-top" alt="...">
+            <div class="card-body">$55,000</div>
+        </div>
+    </div>
+</div>
+
+<!-- This adds data for the user to see -->
+ {% for data in CHECKOUT %}
+<div class="card">
+    <div class="card-body">
+          <p class="fs-3"> Period</p>
+        <p class="fs-5"> {{data.period}}</p>
+        <p class="fs-3"> Deposit</p>
+        <p class="fs-5">{{data.Deposit}}</p>
+           <p class="fs-3"> Total</p>
+        <p class="fs-5">{{data.Total}}</p>
+    </div>
+</div>
+  {% endfor %}
+
+<!-- This gives button at the bottom-->
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-2">
+
+                <a href="Payment.html" class="btn btn-primary">Complete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

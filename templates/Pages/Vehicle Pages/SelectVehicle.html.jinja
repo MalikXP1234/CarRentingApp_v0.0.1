@@ -1,0 +1,16 @@
+{% extends "partials/base2.jinja" %}
+{% from "partials/card.jinja" import mycard %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="PickupZone.html" class="btn btn-primary">Back</a>
+
+<form class="mx-auto d-flex col-6 mb-3 me-lg-3">
+    <input type="search" class="form-control form-control-dark" placeholder="Select Vehicle?" aria-label="Search">
+</form>
+
+<!-- This adds the cards from jinja file type -->
+{% include 'partials/card2.jinja' %}
+
+{% endblock %}

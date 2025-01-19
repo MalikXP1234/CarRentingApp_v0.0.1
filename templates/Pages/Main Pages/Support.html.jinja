@@ -1,0 +1,42 @@
+{% extends "partials/base.jinja" %}
+
+{% block title %} Support {% endblock %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Search.html" class="btn btn-primary">Back</a>
+
+<form class="mx-auto d-flex col-6 mb-3 me-lg-3">
+    <input type="search" class="form-control form-control-dark" placeholder="Need some info?" aria-label="Search">
+</form>
+
+<h1 class="mb-8">Frequently Asked</h1>
+
+<!-- This uses the JSON file and outputs the questions and answers-->
+ {% for data in SUPPORT %}
+<div class="card">
+    <div class="card-body">
+          <p class="fs-3"> {{data.Question}}</p>
+        <p class="fs-5"> {{data.Answer}}</p>
+    </div>
+</div>
+  {% endfor %}
+
+<div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-2">
+
+                <a href="" class="btn btn-warning">Live chat</a>
+            </div>
+        </div>
+    </div>
+
+<!-- This gives you 3 buttons -->
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-dark" type="button">Our main website</button>
+    <button class="btn btn-dark" type="button">Email address </button>
+    <button class="btn btn-dark" type="button">Telephone number</button>
+</div>
+
+{% endblock %}

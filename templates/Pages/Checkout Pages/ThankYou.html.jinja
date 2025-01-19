@@ -1,0 +1,60 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Payment.html" class="btn btn-primary">Back</a>
+
+<div style="text-align: center"><h1> THANK YOU </h1></div>
+
+<!-- Good use of JSON to input more data for the user -->
+<div class="card">
+    <div class="card-body">
+          {% for data in THANKYOU %}
+        <form>
+            <div class="mb-3">
+                <p class="fs-3"> Total</p>
+                 <p class="fs-5">{{data.Total}}</p>
+            </div>
+            <div class="mb-3">
+                <p class="fs-3">Payment Method</p>
+                 <p class="fs-5">{{data.Payment}}</p>
+            </div>
+            <div class="mb-3">
+                <p class="fs-3">Vehicle</p>
+                 <p class="fs-5">{{data.Vehicle}}</p>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <p class="fs-3">A copy of receipt is sent to your personal email address</p>
+    </div>
+</div>
+
+<!-- JSON will get the user email and mobile -->
+<div class="card">
+    <div class="card-body">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-secondary">{{data.Email}}</button>
+            <button type="button" class="btn btn-secondary">{{data.Mobile}}</button>
+        </div>
+    </div>
+</div>
+  {% endfor %}
+<div class="fixed-bottom">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-grid gap-2">
+
+                <a href="../Main Pages/Home.html" class="btn btn-primary">Select</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "partials/base2.jinja" %}
+{% block content %}
+
+<!-- Aadam Malik -->
+
+<a href="Timezone.html" class="btn btn-primary">Back</a>
+
+<h1 class="text-center mb-8">Choose your City!</h1>
+
+<!-- Creates a dropbox that contains the city -->
+<form class="mx-auto d-flex col-6 mb-3 me-lg-3">
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Search city</option>
+        <option value="">Manchester</option>
+        <option value="">Berlin</option>
+        <option value="">Perth</option>
+    </select>
+</form>
+
+<!-- Creates the table that contains the cities for the user to use -->
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for city in PICKUP %}
+    <tr>
+        <td class="col-xs-1 text-center" colspan="2">{{city.City}}</td>
+        <td>
+            <a href="SelectVehicle.html" class="btn btn-dark">Select</a>
+        </td>
+        {% endfor %}
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}

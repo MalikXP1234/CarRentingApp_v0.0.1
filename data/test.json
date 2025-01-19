@@ -1,0 +1,170 @@
+{
+  "BRANDS": [
+    {
+      "Brand1": "Nissan",
+      "Brand2": "McLaren",
+      "Brand3": "Toyota",
+      "Brand4": "Audi"
+    }
+  ],
+  "SEARCH": [
+    {
+      "Country": "United Kingdom",
+      "City": "London",
+      "Postcode": "NE5EQE"
+    },
+    {
+      "Country": "Japan",
+      "City": "tokyo",
+      "Postcode": "IVF23F"
+    },
+    {
+      "Country": "United State",
+      "City": "London",
+      "Postcode": "BHF22F"
+    },
+    {
+      "Country": "Germany",
+      "City": "Ziwickau",
+      "Postcode": "NF24TF"
+    },
+    {
+      "Country": "United Kingdom",
+      "City": "Manchester",
+      "Postcode": "NE4RWT"
+    },
+    {
+      "Country": "Germany",
+      "City": "Berlin",
+      "Postcode": "NE5EQE"
+    },
+    {
+      "Country": "United State",
+      "City": "Washington DC",
+      "Postcode": "V2DARE"
+    },
+    {
+      "Country": "United Kingdom",
+      "City": "Plymouth",
+      "Postcode": "NE3REQ"
+    },
+    {
+      "Country": "China",
+      "City": "Zhengzhou",
+      "Postcode": "J2ED5ED"
+    },
+    {
+      "Country": "United State",
+      "City": "Washington DC",
+      "Postcode": "V2DARE"
+    },
+    {
+      "Country": "Australia",
+      "City": "Perth",
+      "Postcode": "NSE3HW"
+    },
+    {
+      "Country": "Bangladesh",
+      "City": "Chattogram",
+      "Postcode": "B1DE7TD"
+    }
+  ],
+  "PICKUP": [
+    {
+      "City": "Manchester"
+    },
+    {
+      "City": "Berlin"
+    },
+    {
+      "City": "tokyo"
+    },
+    {
+      "City": "Berlin"
+    },
+    {
+      "City": "Kakinada"
+    },
+    {
+      "City": "Beskra"
+    },
+    {
+      "City": "Ha’il"
+    },
+    {
+      "City": "Perth"
+    },
+    {
+      "City": "Sao Vicente"
+    },
+    {
+      "City": "Chattogram"
+    },
+    {
+      "City": "Zhengzhou"
+    },
+    {
+      "City": "Plymouth"
+    }
+  ],
+  "CHECKOUT": [
+    {
+      "period": "For this period, it will be 50$ each ",
+      "Deposit": "Your deposit will be $200",
+      "Total": "Your total will be $250 "
+    }
+  ],
+  "THANKYOU": [
+    {
+      "Total": "Your total cost will be: $55,000 + $250",
+      "Payment": "You have chosen Credit Card as your main payment",
+      "Vehicle": "Your vehicle is: SKYLINE GT ",
+      "Email": "Evens12@gmail.com",
+      "Mobile": "342142343"
+    }
+  ],
+  "SUPPORT": [
+    {
+      "Question": "Is this a real Renting app? the price looks insane!",
+      "Answer": "I would like to say that app has ties to many best brands that allow us lower the prices for cars"
+    },
+    {
+      "Question": "Would it be possible to add more brands in the future?",
+      "Answer": "Yes, we are planning to add many more to help customers as some have taste in cars"
+    },
+    {
+      "Question": "Help! I can get access to my email??",
+      "Answer": "Please send a email to our helper: CarHelpService@gmail.com"
+    }
+  ],
+  "CURRENCY": [
+    {
+      "Currency": "Pounds"
+    },
+        {
+      "Currency": "USD"
+    },
+        {
+      "Currency": "Euros"
+    },
+        {
+      "Currency": "YEN"
+    },
+        {
+      "Currency": "WON"
+    },
+        {
+      "Currency": "FRANC"
+    },
+        {
+      "Currency": "RUPEE"
+    },
+        {
+      "Currency": "CAD"
+    },
+        {
+      "Currency": "AUD"
+    }
+  ]
+}
+
